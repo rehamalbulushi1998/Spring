@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xsi:schemaLocation="
+ http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ <context:component-scan base-package="org.springframework.samples.petclinic.web"/>
+<bean class="spring.spring1.A" name="aclass">
+<property name="msg">
+ <value>This is A class...</value>
+ </property>
+</bean>
+<bean class="spring.spring1.B" name="bclass">
+<property name="msg2">
+ <value>This is B class...</value>
+ </property>
+</bean>
+<bean class="spring.spring1.C" name="cclass">
+<property name="msg3">
+ <value>This is C class...</value>
+ </property>
+</bean>
+
+</beans>
